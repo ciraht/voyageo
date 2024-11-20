@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro - Voyageo</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header>
+            <div class="logo">
+                <img src="{{ url_for('static', filename='logo-voyageo.png') }}" alt="Voyageo Logo">
+            </div>
+            <h1>Cadastro - Voyageo</h1>
+            <p>Infelizmente, a Voyageo encerrou suas operações. Agradecemos pelo seu interesse!</p>
+        </header>
+
+        <!-- Formulário de cadastro -->
+        <div class="cadastro-box">
+            <h2>Preencha os campos abaixo:</h2>
+            <form id="cadastro-form">
+                <input type="text" id="nome" placeholder="Nome Completo" required>
+                <input type="email" id="email" placeholder="Email" required>
+                <input type="password" id="senha" placeholder="Senha" required>
+                <button type="submit">Cadastrar</button>
+            </form>
+
+            <p id="mensagem" class="error-message" style="display: none;">A Voyageo não está mais operando. Agradecemos pelo seu interesse.</p>
+
+            <a href="/" class="back-button">Voltar à Página Inicial</a>
+        </div>
+
+        <footer>
+            <p>© 2024 Voyageo. Todos os direitos reservados.</p>
+        </footer>
+    </div>
+
+    <script>
+        // Script para exibir a mensagem de que a empresa não está mais operando
+        document.getElementById("cadastro-form").addEventListener("submit", function(event) {
+            event.preventDefault();
+            document.getElementById("mensagem").style.display = "block";
+        });
+    </script>
+</body>
+</html>

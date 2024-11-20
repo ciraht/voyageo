@@ -1,0 +1,267 @@
+/* Estilos Globais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7f6;
+    color: #333;
+    padding: 0;
+    margin: 0;
+}
+
+/* Container principal */
+.container {
+    max-width: 1200px; /* Limita a largura máxima do conteúdo */
+    margin: 0 auto; /* Centraliza o conteúdo */
+    padding: 20px;
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 60px 0;
+    background: linear-gradient(135deg, #004d99, #0066cc);
+    color: white;
+    border-radius: 10px;
+}
+
+header .logo img {
+    width: 150px;
+}
+
+header h1 {
+    font-size: 38px;
+    margin: 20px 0;
+}
+
+header p {
+    font-size: 18px;
+    margin-top: 10px;
+    font-style: italic;
+}
+
+/* Seção Principal com informações sobre viagens */
+.main-content {
+    padding: 40px 0;
+    text-align: center;
+}
+
+.main-content h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.main-content p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: #555;
+}
+
+.highlight-boxes {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.highlight-box {
+    background-color: white;
+    padding: 30px;
+    width: 30%;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.highlight-box h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.highlight-box p {
+    font-size: 16px;
+    color: #777;
+}
+
+/* Caixa de Login */
+.login-box {
+    background-color: white;
+    padding: 40px;
+    max-width: 450px;
+    margin: 40px auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.login-box h2 {
+    text-align: center;
+    font-size: 26px;
+    margin-bottom: 20px;
+}
+
+.login-box input {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.login-box button {
+    width: 100%;
+    padding: 15px;
+    background-color: #004d99;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.login-box button:hover {
+    background-color: #0066cc;
+}
+
+.error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+/* Links Adicionais */
+.additional-links {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+/* Caixa de Cadastro */
+.cadastro-box {
+    background-color: white;
+    padding: 40px;
+    max-width: 450px;
+    margin: 40px auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.cadastro-box h2 {
+    text-align: center;
+    font-size: 26px;
+    margin-bottom: 20px;
+}
+
+.cadastro-box input {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.cadastro-box button {
+    width: 100%;
+    padding: 15px;
+    background-color: #004d99;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.cadastro-box button:hover {
+    background-color: #0066cc;
+}
+
+/* Botão de Voltar */
+.back-button {
+    display: block;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 16px;
+    color: #004d99;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.back-button:hover {
+    color: #0066cc;
+}
+
+/* Aplica apenas à página secreta */
+body.secreta {
+    background-color: #333; /* Fundo escuro neutro */
+    font-family: 'Arial', sans-serif; /* Fonte limpa, sem muito estilo */
+    color: #ccc; /* Texto claro e sem destaque */
+    padding: 50px;
+    text-align: center;
+    margin: 0;
+}
+
+/* Container com o input e o botão */
+.container.secreta {
+    margin-top: 100px;
+    background-color: #444; /* Fundo cinza claro para o container */
+    padding: 30px;
+    border: 1px solid #666; /* Borda simples e discreta */
+    width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Input de texto */
+input[type="text"] {
+    width: 100%;
+    height: 30px;
+    background-color: #555; /* Fundo mais escuro para o input */
+    color: white; /* Texto em branco */
+    border: 1px solid #777; /* Borda simples */
+    padding: 8px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Botão piscando */
+button {
+    width: 100%;
+    height: 40px;
+    background-color: #666; /* Fundo cinza escuro */
+    border: 1px solid #888; /* Borda mais clara */
+    color: transparent; /* Sem texto */
+    font-size: 0; /* Sem texto, removendo qualquer padding de texto */
+    cursor: pointer;
+    animation: piscar 1s infinite alternate; /* Animação para piscar */
+}
+
+/* Animação de piscar do botão */
+@keyframes piscar {
+    0% {
+        background-color: #777; /* Fundo do botão mais claro */
+    }
+    50% {
+        background-color: #555; /* Fundo do botão mais escuro */
+    }
+    100% {
+        background-color: #777; /* Retorna ao fundo claro */
+    }
+}
+
+/* Parágrafo com mensagem */
+#paragrafo {
+    font-size: 18px;
+    color: #ccc; /* Texto suave */
+    font-family: 'Courier New', Courier, monospace; /* Fonte simples de máquina de escrever */
+    margin-top: 30px;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px black; /* Sombra leve no texto */
+}
