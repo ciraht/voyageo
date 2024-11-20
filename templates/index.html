@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Voyageo</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <!-- Header com informações sobre a empresa -->
+        <header>
+            <div class="logo">
+                <img src="{{ url_for('static', filename='logo-voyageo.png') }}" alt="Voyageo Logo">
+            </div>
+            <h1>Bem-vindo à Voyageo</h1>
+            <p>A melhor experiência em viagens ao redor do mundo.</p>
+            <p>Contacte-nos em voyageoenterprise@gmail.com  </p>
+        </header>
+
+        <!-- Seção principal com informações sobre viagens -->
+        <section class="main-content">
+            <h2>Explore o Mundo com a Voyageo</h2>
+            <p>Somos especializados em oferecer viagens inesquecíveis para os destinos mais incríveis do planeta. Descubra as maravilhas de outros continentes, explore culturas novas e crie memórias que durarão a vida toda.</p>
+
+            <div class="highlight-boxes">
+                <div class="highlight-box">
+                    <h3>Destinos Exóticos</h3>
+                    <p>Explore as maravilhas da Ásia, África e América do Sul com a nossa equipe de especialistas.</p>
+                </div>
+                <div class="highlight-box">
+                    <h3>Viagens Personalizadas</h3>
+                    <p>Criamos pacotes personalizados para que sua viagem seja exatamente do jeitinho que você sonhou.</p>
+                </div>
+                <div class="highlight-box">
+                    <h3>Atendimento Premium</h3>
+                    <p>Nosso atendimento exclusivo e eficiente garante que sua viagem seja perfeita do começo ao fim.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Formulário de login -->
+        <div class="login-box">
+            <h2>Faça seu login</h2>
+            <form action="/" method="POST">
+                <input type="email" name="email" placeholder="Email" required>
+                <input type="password" name="senha" placeholder="Senha" required>
+                <button type="submit">Entrar</button>
+            </form>
+
+            {% if mensagem %}
+                <p class="error-message">{{ mensagem }}</p>
+            {% endif %}
+
+            <div class="additional-links">
+                <a href="#" class="forgot-password">Esqueci a senha</a>
+                <a href="/cadastro" class="cadastro-button">Cadastrar-se</a>
+            </div>
+        </div>
+
+        <footer>
+            <p>© 2024 Voyageo. Todos os direitos reservados.</p>
+        </footer>
+    </div>
+</body>
+</html>
