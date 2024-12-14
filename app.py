@@ -96,7 +96,9 @@ def pagina_secreta():
         elif entrada.lower() == 'palíndromo':
             resultado = 'sator arepo tenet opera rotas'
         elif entrada.lower() == 'sator arepo tenet opera rotas':
-            resultado = 'fddvd'
+            resultado = 'https://website-p6ae.onrender.com'
+        elif entrada.lower() == 'eu gosto de batata frita':
+            resultado = '...wait! they dont love you like i love you'
         else:
             resultado = None
 
