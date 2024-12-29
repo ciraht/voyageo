@@ -37,6 +37,8 @@ def pagina_secreta():
             resultado = 'banana'
         elif entrada.lower() == 'auol':
             resultado = '@tales_____________'
+        elif entrada.lower() == 'atil':
+            resultado = '@tales_____________'
         elif entrada.lower() == 'socorro':
             resultado = 'isso não vai te ajudar em nada'
         elif entrada.lower() == 'teste':
